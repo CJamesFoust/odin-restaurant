@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../assets/backgroundImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+header * {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 1rem;
+  height: fit-content;
+}
+
+button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#content {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  height: 100%;
+}
+
+.container {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  letter-spacing: 2px;
+
+  button {
+    background: #d98e32;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+button:hover {
+    filter: saturate(0.8);
+}
+}
+
+.welcome {
+    font-size: 32px;
+    text-shadow: 0px 0px 20px black;
+}
+
+.restaurant-name {
+    font-size: 80px;
+    font-style: italic;
+    text-shadow: 0px 0px 20px black;
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.no-italic {
+    font-style: normal;
+}
+
+.slogan {
+    font-size: 32px;
+    text-shadow: 0px 0px 20px black;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+.playfair-display-headings {
+      font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
