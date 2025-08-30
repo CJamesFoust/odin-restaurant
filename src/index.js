@@ -1,5 +1,6 @@
 import "./styles.css";
 import { createElementWithClassInnerText, addMultipleChildrenToParent } from "./helpers";
+import data from './menu.json' with { type: 'json' };
 
 const navigateToHomePage = (function() {
     const content = document.querySelector('#content');
@@ -8,7 +9,7 @@ const navigateToHomePage = (function() {
     const restaurantName = createElementWithClassInnerText({el:'div', cList:'restaurant-name'});
     const ember = createElementWithClassInnerText({el:'div', text:'Ember'});
     const and = createElementWithClassInnerText({el:'div', cList:'no-italic', text:'&'});
-    const vine = createElementWithClassInnerText({el:'div', text:'Vine'});
+    const vine = createElementWithClassInnerText({el:'div', cList: data[0].tags, text:'Vine'});
     const slogan = createElementWithClassInnerText({el:'div', cList:'slogan', text:'Enjoy delicious food and a cozy atmosphere'});
     const viewMenu = createElementWithClassInnerText({el:'button', text: 'VIEW MENU'});
     
