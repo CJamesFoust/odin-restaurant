@@ -1,12 +1,23 @@
+import data from './menu.json';
+import { imageMap } from "./images";
+
 export const createElementWithClassInnerText = function(obj) {
-    let el = obj.el ? obj.el : null;
+    let el = obj.el ? obj.el : 'div';
     let cList = obj.cList ? obj.cList : null;
     let text = obj.text ? obj.text : null;
+    let src = obj.src ? obj.src : imageMap.comingSoon;
     let element = document.createElement(el);
-    
-    if (el === null) {
-        console.error('Element declaration not present. Check values passed');
-        return;
+
+    if (obj.src) {
+        let menuItem = data.find(item => item.imageKey === obj.src)
+        src = imageMap[menuItem.imageKey];
+    }
+
+    if(el === 'img') {
+        element.src = src;
+        element.style.width = '300px';
+        element.style.height = '200px';
+        return element;
     }
 
     if (typeof cList === 'string' || cList instanceof String) {
@@ -15,8 +26,8 @@ export const createElementWithClassInnerText = function(obj) {
         cList.map(c => element.classList.add(c));
     }
 
-    if (typeof text === 'string' || text instanceof String) {
-        element.innerText = text;
+    if (text !== null) {
+        element.innerText = `${text}`;
     }
 
     return element;
