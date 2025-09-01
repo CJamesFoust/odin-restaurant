@@ -1,176 +1,664 @@
 [
-  {
-    "id": "starter-001",
-    "name": "Bruschetta",
-    "description": "Golden slices of toasted artisan bread topped with a vibrant mix of ripe tomatoes, fresh basil, and a drizzle of extra‑virgin olive oil. A simple, sun‑kissed classic that bursts with freshness in every bite.",
-    "cost": 8,
-    "imageKey": "bruschetta",
-    "category": "starter",
-    "tags": ["vegetarian", "light", "fresh"],
-    "availability": true,
-    "display_order": 1,
-    "featured": false,
-    "portion_size": "3 pieces",
-    "serves": 1,
-    "calories": 220,
-    "dietary_info": "Vegetarian",
-    "allergens": ["wheat", "gluten"],
-    "prep_time": 10,
-    "ingredients": ["bread", "tomato", "basil", "olive oil"],
-    "status": "available",
-    "nutrition": {
-      "protein_g": 6,
-      "carbs_g": 32,
-      "fat_g": 8,
-      "fiber_g": 3,
-      "sugar_g": 5
+    {
+        "id": "starter-001",
+        "name": "Bruschetta",
+        "description": "Golden slices of toasted artisan bread topped with a vibrant mix of ripe tomatoes, fresh basil, and a drizzle of extra‑virgin olive oil. A simple, sun‑kissed classic that bursts with freshness in every bite.",
+        "cost": 8,
+        "imageKey": "bruschetta",
+        "category": "starter",
+        "tags": [
+            "vegetarian",
+            "light",
+            "fresh"
+        ],
+        "availability": true,
+        "display_order": 1,
+        "featured": false,
+        "portion_size": "3 pieces",
+        "serves": 1,
+        "calories": 220,
+        "dietary_info": "Vegetarian",
+        "allergens": [
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 10,
+        "ingredients": [
+            "bread",
+            "tomato",
+            "basil",
+            "olive oil"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 6,
+            "carbs_g": 32,
+            "fat_g": 8,
+            "fiber_g": 3,
+            "sugar_g": 5
+        },
+        "rating": 4.6,
+        "review_count": 87
     },
-    "rating": 4.6,
-    "review_count": 87
-  },
-  {
-    "id": "main-001",
-    "name": "Grilled Salmon",
-    "description": "A tender fillet of salmon, flame‑grilled to perfection with delicate crosshatch marks, served alongside wilted spinach and a bright wedge of lemon. Light, flavorful, and full of natural goodness.",
-    "cost": 24,
-    "imageKey": "grilledSalmon",
-    "category": "main",
-    "tags": ["gluten-free", "seafood"],
-    "availability": true,
-    "display_order": 2,
-    "featured": true,
-    "portion_size": "200g fillet",
-    "serves": 1,
-    "calories": 480,
-    "dietary_info": "Gluten-free",
-    "allergens": ["fish"],
-    "prep_time": 20,
-    "ingredients": ["salmon", "spinach", "lemon", "olive oil"],
-    "status": "available",
-    "nutrition": {
-      "protein_g": 42,
-      "carbs_g": 3,
-      "fat_g": 30,
-      "fiber_g": 1,
-      "sugar_g": 0
+    {
+        "id": "starter-002",
+        "name": "Stuffed Mushrooms",
+        "description": "Plump mushroom caps filled with a savory blend of breadcrumbs, herbs, and melted cheese, baked until golden and garnished with fresh parsley.",
+        "cost": 9.50,
+        "imageKey": "stuffedMushrooms",
+        "category": "starter",
+        "tags": [
+            "vegetarian",
+            "baked",
+            "comfort food"
+        ],
+        "availability": true,
+        "display_order": 2,
+        "featured": false,
+        "portion_size": "4 pieces",
+        "serves": 1,
+        "calories": 260,
+        "dietary_info": "Contains dairy and gluten",
+        "allergens": [
+            "milk",
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 15,
+        "ingredients": [
+            "mushrooms",
+            "breadcrumbs",
+            "cheese",
+            "parsley",
+            "garlic"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 9,
+            "carbs_g": 18,
+            "fat_g": 16,
+            "fiber_g": 3,
+            "sugar_g": 4
+        },
+        "rating": 4.6,
+        "review_count": 64
     },
-    "rating": 4.8,
-    "review_count": 142
-  },
-  {
-    "id": "main-002",
-    "name": "Porterhouse Steak",
-    "description": "A hearty T‑bone cut, seared over an open flame for a smoky char and juicy interior. Served with crisp potato wedges and a charred tomato for a true steakhouse experience.",
-    "cost": 32,
-    "imageKey": "steak",
-    "category": "main",
-    "tags": ["gluten-free", "signature"],
-    "availability": true,
-    "display_order": 3,
-    "featured": true,
-    "portion_size": "16oz",
-    "serves": 1,
-    "calories": 850,
-    "dietary_info": "Contains no gluten; cooked with butter",
-    "allergens": ["dairy"],
-    "prep_time": 25,
-    "ingredients": ["porterhouse steak", "potato", "tomato", "rosemary"],
-    "status": "available",
-    "nutrition": {
-      "protein_g": 68,
-      "carbs_g": 25,
-      "fat_g": 55,
-      "fiber_g": 4,
-      "sugar_g": 3
+    {
+        "id": "starter-003",
+        "name": "Roasted Beet Salad",
+        "description": "Sweet, oven-roasted beets tossed with peppery arugula, crumbled cheese, and toasted nuts, finished with a drizzle of balsamic dressing.",
+        "cost": 10.00,
+        "imageKey": "roastedBeetSalad",
+        "category": "starter",
+        "tags": [
+            "vegetarian",
+            "fresh",
+            "salad"
+        ],
+        "availability": true,
+        "display_order": 3,
+        "featured": false,
+        "portion_size": "1 plate",
+        "serves": 1,
+        "calories": 310,
+        "dietary_info": "Contains dairy and nuts",
+        "allergens": [
+            "milk",
+            "tree nuts"
+        ],
+        "prep_time": 12,
+        "ingredients": [
+            "beets",
+            "arugula",
+            "goat cheese",
+            "walnuts",
+            "balsamic dressing"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 9,
+            "carbs_g": 22,
+            "fat_g": 20,
+            "fiber_g": 5,
+            "sugar_g": 14
+        },
+        "rating": 4.7,
+        "review_count": 51
     },
-    "rating": 4.9,
-    "review_count": 198
-  },
-  {
-    "id": "main-003",
-    "name": "Spaghetti with Meatballs",
-    "description": "Al dente spaghetti swirled in a rich, slow‑simmered tomato sauce, crowned with two plump, seared meatballs, a dusting of parmesan, and a sprig of fresh basil. Comfort food at its finest.",
-    "cost": 18,
-    "imageKey": "spaghetti",
-    "category": "main",
-    "tags": ["pasta", "comfort food"],
-    "availability": true,
-    "display_order": 4,
-    "featured": false,
-    "portion_size": "350g",
-    "serves": 1,
-    "calories": 720,
-    "dietary_info": "Contains gluten and dairy",
-    "allergens": ["wheat", "gluten", "dairy"],
-    "prep_time": 20,
-    "ingredients": ["spaghetti", "meatballs", "tomato sauce", "parmesan", "basil"],
-    "status": "available",
-    "nutrition": {
-      "protein_g": 28,
-      "carbs_g": 85,
-      "fat_g": 25,
-      "fiber_g": 6,
-      "sugar_g": 12
+    {
+        "id": "starter-004",
+        "name": "Charcuterie Board for One",
+        "description": "A curated selection of cured meats, artisan cheeses, olives, cornichons, and a crisp cracker, artfully arranged on a rustic wooden board and garnished with fresh herbs.",
+        "cost": 14.00,
+        "imageKey": "charcuterie",
+        "category": "starter",
+        "tags": [
+            "meat",
+            "cheese",
+            "shareable"
+        ],
+        "availability": true,
+        "display_order": 4,
+        "featured": true,
+        "portion_size": "1 board",
+        "serves": 1,
+        "calories": 540,
+        "dietary_info": "Contains dairy and gluten",
+        "allergens": [
+            "milk",
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 8,
+        "ingredients": [
+            "salami",
+            "prosciutto",
+            "semi-hard cheese",
+            "cracker",
+            "olives",
+            "cornichons",
+            "parsley"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 28,
+            "carbs_g": 22,
+            "fat_g": 38,
+            "fiber_g": 3,
+            "sugar_g": 2
+        },
+        "rating": 4.8,
+        "review_count": 89
     },
-    "rating": 4.7,
-    "review_count": 156
-  },
-  {
-    "id": "dessert-001",
-    "name": "Classic Cheesecake",
-    "description": "A smooth, creamy New York‑style cheesecake with a golden graham cracker crust. Served simply, without toppings, to let its rich flavor and velvety texture shine.",
-    "cost": 7,
-    "imageKey": "cheesecake",
-    "category": "dessert",
-    "tags": ["classic", "sweet"],
-    "availability": true,
-    "display_order": 5,
-    "featured": false,
-    "portion_size": "1 slice",
-    "serves": 1,
-    "calories": 420,
-    "dietary_info": "Contains dairy and gluten",
-    "allergens": ["milk", "wheat", "gluten"],
-    "prep_time": 0,
-    "ingredients": ["cream cheese", "sugar", "eggs", "graham crackers", "butter"],
-    "status": "available",
-    "nutrition": {
-      "protein_g": 7,
-      "carbs_g": 32,
-      "fat_g": 28,
-      "fiber_g": 0,
-      "sugar_g": 24
+    {
+        "id": "main-001",
+        "name": "Grilled Salmon",
+        "description": "A tender fillet of salmon, flame‑grilled to perfection with delicate crosshatch marks, served alongside wilted spinach and a bright wedge of lemon. Light, flavorful, and full of natural goodness.",
+        "cost": 24,
+        "imageKey": "grilledSalmon",
+        "category": "main",
+        "tags": [
+            "gluten-free",
+            "seafood"
+        ],
+        "availability": true,
+        "display_order": 2,
+        "featured": true,
+        "portion_size": "200g fillet",
+        "serves": 1,
+        "calories": 480,
+        "dietary_info": "Gluten-free",
+        "allergens": [
+            "fish"
+        ],
+        "prep_time": 20,
+        "ingredients": [
+            "salmon",
+            "spinach",
+            "lemon",
+            "olive oil"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 42,
+            "carbs_g": 3,
+            "fat_g": 30,
+            "fiber_g": 1,
+            "sugar_g": 0
+        },
+        "rating": 4.8,
+        "review_count": 142
     },
-    "rating": 4.5,
-    "review_count": 94
-  },
-  {
-    "id": "beverage-001",
-    "name": "Cappuccino",
-    "description": "A bold shot of espresso topped with silky steamed milk and finished with delicate latte art. Served in a rustic ceramic cup for the perfect cozy finish to your meal.",
-    "cost": 4,
-    "imageKey": "cappuccino",
-    "category": "beverage",
-    "tags": ["coffee", "hot drink"],
-    "availability": true,
-    "display_order": 6,
-    "featured": false,
-    "portion_size": "8oz cup",
-    "serves": 1,
-    "calories": 120,
-    "dietary_info": "Contains dairy",
-    "allergens": ["milk"],
-    "prep_time": 5,
-    "ingredients": ["espresso", "milk"],
-    "status": "available",
-    "nutrition": {
-      "protein_g": 6,
-      "carbs_g": 10,
-      "fat_g": 5,
-      "fiber_g": 0,
-      "sugar_g": 9
+    {
+        "id": "main-002",
+        "name": "Porterhouse Steak",
+        "description": "A hearty T‑bone cut, seared over an open flame for a smoky char and juicy interior. Served with crisp potato wedges and a charred tomato for a true steakhouse experience.",
+        "cost": 32,
+        "imageKey": "steak",
+        "category": "main",
+        "tags": [
+            "gluten-free",
+            "signature"
+        ],
+        "availability": true,
+        "display_order": 3,
+        "featured": true,
+        "portion_size": "16oz",
+        "serves": 1,
+        "calories": 850,
+        "dietary_info": "Contains no gluten; cooked with butter",
+        "allergens": [
+            "dairy"
+        ],
+        "prep_time": 25,
+        "ingredients": [
+            "porterhouse steak",
+            "potato",
+            "tomato",
+            "rosemary"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 68,
+            "carbs_g": 25,
+            "fat_g": 55,
+            "fiber_g": 4,
+            "sugar_g": 3
+        },
+        "rating": 4.9,
+        "review_count": 198
     },
-    "rating": 4.6,
-    "review_count": 73
-  }
+    {
+        "id": "main-003",
+        "name": "Spaghetti with Meatballs",
+        "description": "Al dente spaghetti swirled in a rich, slow‑simmered tomato sauce, crowned with two plump, seared meatballs, a dusting of parmesan, and a sprig of fresh basil. Comfort food at its finest.",
+        "cost": 18,
+        "imageKey": "spaghetti",
+        "category": "main",
+        "tags": [
+            "pasta",
+            "comfort food"
+        ],
+        "availability": true,
+        "display_order": 4,
+        "featured": false,
+        "portion_size": "350g",
+        "serves": 1,
+        "calories": 720,
+        "dietary_info": "Contains gluten and dairy",
+        "allergens": [
+            "wheat",
+            "gluten",
+            "dairy"
+        ],
+        "prep_time": 20,
+        "ingredients": [
+            "spaghetti",
+            "meatballs",
+            "tomato sauce",
+            "parmesan",
+            "basil"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 28,
+            "carbs_g": 85,
+            "fat_g": 25,
+            "fiber_g": 6,
+            "sugar_g": 12
+        },
+        "rating": 4.7,
+        "review_count": 156
+    },
+    {
+        "id": "main-004",
+        "name": "Chicken Parmesan",
+        "description": "Crispy breaded chicken breast topped with rich tomato sauce and melted mozzarella, served over a bed of al dente spaghetti and finished with fresh parsley.",
+        "cost": 22.00,
+        "imageKey": "chickenParmesan",
+        "category": "main",
+        "tags": [
+            "pasta",
+            "Italian",
+            "comfort food"
+        ],
+        "availability": true,
+        "display_order": 5,
+        "featured": true,
+        "portion_size": "1 plate",
+        "serves": 1,
+        "calories": 860,
+        "dietary_info": "Contains dairy and gluten",
+        "allergens": [
+            "milk",
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 25,
+        "ingredients": [
+            "chicken breast",
+            "breadcrumbs",
+            "tomato sauce",
+            "mozzarella",
+            "parmesan",
+            "spaghetti",
+            "parsley"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 54,
+            "carbs_g": 72,
+            "fat_g": 32,
+            "fiber_g": 6,
+            "sugar_g": 9
+        },
+        "rating": 4.9,
+        "review_count": 178
+    },
+    {
+        "id": "dessert-001",
+        "name": "Classic Cheesecake",
+        "description": "A smooth, creamy New York‑style cheesecake with a golden graham cracker crust. Served simply, without toppings, to let its rich flavor and velvety texture shine.",
+        "cost": 7,
+        "imageKey": "cheesecake",
+        "category": "dessert",
+        "tags": [
+            "classic",
+            "sweet"
+        ],
+        "availability": true,
+        "display_order": 5,
+        "featured": false,
+        "portion_size": "1 slice",
+        "serves": 1,
+        "calories": 420,
+        "dietary_info": "Contains dairy and gluten",
+        "allergens": [
+            "milk",
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 0,
+        "ingredients": [
+            "cream cheese",
+            "sugar",
+            "eggs",
+            "graham crackers",
+            "butter"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 7,
+            "carbs_g": 32,
+            "fat_g": 28,
+            "fiber_g": 0,
+            "sugar_g": 24
+        },
+        "rating": 4.5,
+        "review_count": 94
+    },
+    {
+        "id": "dessert-002",
+        "name": "Tiramisu",
+        "description": "Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder for a rich, velvety finish.",
+        "cost": 8.50,
+        "imageKey": "tiramisu",
+        "category": "dessert",
+        "tags": [
+            "classic",
+            "coffee-flavored",
+            "Italian"
+        ],
+        "availability": true,
+        "display_order": 6,
+        "featured": true,
+        "portion_size": "1 slice",
+        "serves": 1,
+        "calories": 480,
+        "dietary_info": "Contains dairy, eggs, and gluten",
+        "allergens": [
+            "milk",
+            "eggs",
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 0,
+        "ingredients": [
+            "ladyfingers",
+            "espresso",
+            "mascarpone",
+            "eggs",
+            "cocoa powder"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 8,
+            "carbs_g": 45,
+            "fat_g": 28,
+            "fiber_g": 2,
+            "sugar_g": 27
+        },
+        "rating": 4.8,
+        "review_count": 112
+    },
+    {
+        "id": "dessert-003",
+        "name": "Rustic Apple Galette",
+        "description": "Flaky, golden pastry folded around caramelized apple slices, drizzled with honey and finished with a dusting of powdered sugar.",
+        "cost": 8.00,
+        "imageKey": "appleGalette",
+        "category": "dessert",
+        "tags": [
+            "fruit",
+            "pastry",
+            "rustic"
+        ],
+        "availability": true,
+        "display_order": 7,
+        "featured": false,
+        "portion_size": "1 slice",
+        "serves": 1,
+        "calories": 390,
+        "dietary_info": "Contains dairy and gluten",
+        "allergens": [
+            "milk",
+            "wheat",
+            "gluten"
+        ],
+        "prep_time": 0,
+        "ingredients": [
+            "apples",
+            "pastry dough",
+            "honey",
+            "sugar",
+            "butter"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 5,
+            "carbs_g": 52,
+            "fat_g": 18,
+            "fiber_g": 4,
+            "sugar_g": 28
+        },
+        "rating": 4.7,
+        "review_count": 76
+    },
+    {
+        "id": "dessert-004",
+        "name": "Chocolate Mousse Pot",
+        "description": "Rich, velvety chocolate mousse served in a rustic ceramic jar, topped with fresh whipped cream and dark chocolate shavings.",
+        "cost": 7.50,
+        "imageKey": "chocolateMoussePot",
+        "category": "dessert",
+        "tags": [
+            "chocolate",
+            "creamy",
+            "rustic"
+        ],
+        "availability": true,
+        "display_order": 8,
+        "featured": false,
+        "portion_size": "1 jar",
+        "serves": 1,
+        "calories": 420,
+        "dietary_info": "Contains dairy and eggs",
+        "allergens": [
+            "milk",
+            "eggs"
+        ],
+        "prep_time": 0,
+        "ingredients": [
+            "dark chocolate",
+            "cream",
+            "eggs",
+            "sugar",
+            "whipped cream"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 6,
+            "carbs_g": 35,
+            "fat_g": 28,
+            "fiber_g": 4,
+            "sugar_g": 26
+        },
+        "rating": 4.9,
+        "review_count": 134
+    },
+    {
+        "id": "beverage-001",
+        "name": "Cappuccino",
+        "description": "A bold shot of espresso topped with silky steamed milk and finished with delicate latte art. Served in a rustic ceramic cup for the perfect cozy finish to your meal.",
+        "cost": 4,
+        "imageKey": "cappuccino",
+        "category": "beverage",
+        "tags": [
+            "coffee",
+            "hot drink"
+        ],
+        "availability": true,
+        "display_order": 6,
+        "featured": false,
+        "portion_size": "8oz cup",
+        "serves": 1,
+        "calories": 120,
+        "dietary_info": "Contains dairy",
+        "allergens": [
+            "milk"
+        ],
+        "prep_time": 5,
+        "ingredients": [
+            "espresso",
+            "milk"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 6,
+            "carbs_g": 10,
+            "fat_g": 5,
+            "fiber_g": 0,
+            "sugar_g": 9
+        },
+        "rating": 4.6,
+        "review_count": 73
+    },
+    {
+        "id": "beverage-002",
+        "name": "Iced Tea with Lemon",
+        "description": "Chilled, freshly brewed black tea served over ice with slices of lemon for a crisp, refreshing finish.",
+        "cost": 3.50,
+        "imageKey": "icedTea",
+        "category": "beverage",
+        "tags": [
+            "cold drink",
+            "tea",
+            "refreshing"
+        ],
+        "availability": true,
+        "display_order": 7,
+        "featured": false,
+        "portion_size": "12oz glass",
+        "serves": 1,
+        "calories": 80,
+        "dietary_info": "Contains no common allergens",
+        "allergens": [],
+        "prep_time": 2,
+        "ingredients": [
+            "black tea",
+            "lemon",
+            "ice",
+            "sugar (optional)"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 0,
+            "carbs_g": 22,
+            "fat_g": 0,
+            "fiber_g": 0,
+            "sugar_g": 20
+        },
+        "rating": 4.5,
+        "review_count": 58
+    },
+    {
+        "id": "beverage-003",
+        "name": "Rustic Hot Chocolate",
+        "description": "Rich, velvety hot chocolate served in a rustic ceramic mug, topped with fresh whipped cream and a dusting of cocoa powder.",
+        "cost": 4.00,
+        "imageKey": "hotChocolate",
+        "category": "beverage",
+        "tags": [
+            "hot drink",
+            "chocolate",
+            "comfort"
+        ],
+        "availability": true,
+        "display_order": 8,
+        "featured": false,
+        "portion_size": "10oz mug",
+        "serves": 1,
+        "calories": 280,
+        "dietary_info": "Contains dairy",
+        "allergens": [
+            "milk"
+        ],
+        "prep_time": 5,
+        "ingredients": [
+            "milk",
+            "dark chocolate",
+            "cocoa powder",
+            "whipped cream",
+            "sugar"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 8,
+            "carbs_g": 32,
+            "fat_g": 14,
+            "fiber_g": 3,
+            "sugar_g": 28
+        },
+        "rating": 4.8,
+        "review_count": 91
+    },
+    {
+        "id": "beverage-004",
+        "name": "Sparkling Elderflower Lemonade",
+        "description": "Lightly sparkling lemonade infused with fragrant elderflower, served over ice with fresh lemon slices and a sprig of mint.",
+        "cost": 4.25,
+        "imageKey": "elderflowerLemonade",
+        "category": "beverage",
+        "tags": [
+            "cold drink",
+            "floral",
+            "refreshing"
+        ],
+        "availability": true,
+        "display_order": 9,
+        "featured": false,
+        "portion_size": "12oz glass",
+        "serves": 1,
+        "calories": 95,
+        "dietary_info": "Contains no common allergens",
+        "allergens": [],
+        "prep_time": 2,
+        "ingredients": [
+            "sparkling water",
+            "elderflower syrup",
+            "lemon",
+            "mint",
+            "ice"
+        ],
+        "status": "available",
+        "nutrition": {
+            "protein_g": 0,
+            "carbs_g": 24,
+            "fat_g": 0,
+            "fiber_g": 0,
+            "sugar_g": 22
+        },
+        "rating": 4.7,
+        "review_count": 63
+    }
 ]

@@ -1,10 +1,11 @@
 import "./styles.css";
-import { createElementWithClassInnerText, addMultipleChildrenToParent } from "./helpers";
-import data from './menu.json' with { type: 'json' };
+import aboutPage from "./about.json";
+import { createElementWithClassInnerText, addMultipleChildrenToParent, selectCategory, setCurrentMenuContext, generateElementsFromJSON } from "./helpers";
 
 (function() {
     document.querySelector('#home-btn').addEventListener('click', () => renderHomePage());
     document.querySelector('#menu-btn').addEventListener('click', () => renderMenu());
+    document.querySelector('#about-btn').addEventListener('click', () => renderAbout());
 })()
 
 const renderHomePage = (function() {
@@ -24,6 +25,7 @@ const renderHomePage = (function() {
 
     content.replaceChildren();
     content.appendChild(container);
+    setCurrentMenuContext("");
 });
 
 const renderMenu = (function() {
@@ -37,20 +39,22 @@ const renderMenu = (function() {
     const beveragesBtn = createElementWithClassInnerText({el: 'button', cList: 'category-button', text: 'BEVERAGES'})
     const foodGrid = createElementWithClassInnerText({cList: 'food-grid'});
 
-    //change when implementing categories
-    data.map((item) => {
-        let menuItem = createElementWithClassInnerText({cList: ['item', `item-${item.display_order}`]});
-        let img = createElementWithClassInnerText({el: 'img', src: item.imageKey});
-        let itemNamePrice = createElementWithClassInnerText({cList: 'item-name-price'});
-        let itemName = createElementWithClassInnerText({cList: 'item-name', text: item.name});
-        let itemPrice = createElementWithClassInnerText({cList: 'item-price', text: item.cost});
-        let itemDesc = createElementWithClassInnerText({cList: 'item-desc', text: item.description});
-
-        addMultipleChildrenToParent({parent: itemNamePrice, children: [itemName, itemPrice]});
-        addMultipleChildrenToParent({parent: menuItem, children: [ img, itemNamePrice, itemDesc]});
-        foodGrid.appendChild(menuItem);
+    appBtn.addEventListener('click', () => {
+        selectCategory("starter", foodGrid);
+    })
+    mainCourseBtn.addEventListener('click', () => {
+        selectCategory("main", foodGrid);
+    })
+    dessertsBtn.addEventListener('click', () => {
+        selectCategory("dessert", foodGrid);
+    })
+    beveragesBtn.addEventListener('click', () => {
+        selectCategory("beverage", foodGrid);
     })
 
+    
+
+    selectCategory("starter", foodGrid)
    
     addMultipleChildrenToParent({parent: categories, children: [appBtn, mainCourseBtn, dessertsBtn, beveragesBtn]});
     addMultipleChildrenToParent({parent: container, children: [title, categories, foodGrid]});
@@ -58,5 +62,16 @@ const renderMenu = (function() {
     content.appendChild(container);
 })
 
-// renderHomePage();
-renderMenu();
+const renderAbout = (function() {
+    const content = document.querySelector('#content');
+    const pageEl = generateElementsFromJSON(aboutPage);
+    content.replaceChildren();
+    pageEl.map((el) => {
+        content.appendChild(el);
+    });
+    setCurrentMenuContext("");
+})
+
+renderHomePage();
+// renderMenu();
+// renderAbout();

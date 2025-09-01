@@ -1,0 +1,157 @@
+[
+    {
+        "t": "div",
+        "cl": [
+            "about"
+        ],
+        "id": "about",
+        "ch": [
+            {
+                "t": "h1",
+                "cl": [
+                    "about-title"
+                ],
+                "id": "about-title",
+                "text": "About Us"
+            },
+            {
+                "t": "div",
+                "cl": [
+                    "story"
+                ],
+                "id": "story",
+                "ch": [
+                    {
+                        "t": "h3",
+                        "cl": [
+                            "section-title"
+                        ],
+                        "id": "story-title",
+                        "text": "Our Story"
+                    },
+                    {
+                        "t": "div",
+                        "cl": [
+                            "storyPara"
+                        ],
+                        "id": "storyPara",
+                        "text": [
+                            "Nestled in the heart of the community, Ember & Vine was born from a simple idea: that food should feel like home, even when you’re dining out. Our name reflects the soul of our kitchen — ember for the warmth of the fire that brings people together, and vine for the fresh, seasonal ingredients that connect us to the land.",
+                            "What began as a small gathering place for friends has grown into a restaurant where every detail — from the flicker of candlelight on reclaimed wood tables to the aroma of herbs drifting from the open kitchen — is designed to make you feel welcome."
+                        ]
+                    }
+                ]
+            },
+            {
+                "t": "div",
+                "cl": [
+                    "philo"
+                ],
+                "id": "philo",
+                "ch": [
+                    {
+                        "t": "h3",
+                        "cl": [
+                            "section-title"
+                        ],
+                        "id": "philo-title",
+                        "text": "Our Philosophy"
+                    },
+                    {
+                        "t": "div",
+                        "cl": [
+                            "philoPara"
+                        ],
+                        "id": "philoPara",
+                        "text": [
+                            "We believe in slow food, shared stories, and honest ingredients. Our chefs work closely with local farmers, bakers, and artisans to bring you dishes that are as fresh as they are flavorful. Every plate tells a story — of the hands that grew it, the fire that cooked it, and the people who gather to enjoy it.",
+                            "From rustic starters and hearty mains to indulgent desserts and hand‑crafted drinks, our menu is a celebration of comfort and craft."
+                        ]
+                    }
+                ]
+            },
+            {
+                "t": "div",
+                "cl": [
+                    "experience"
+                ],
+                "id": "experience",
+                "ch": [
+                    {
+                        "t": "h3",
+                        "cl": [
+                            "section-title"
+                        ],
+                        "id": "experience-title",
+                        "text": "The Ember & Vine Experience"
+                    },
+                    {
+                        "t": "div",
+                        "cl": [
+                            "experiencePara"
+                        ],
+                        "id": "experiencePara",
+                        "ch": [
+                            {
+                                "t": "ul",
+                                "ch": [
+                                    {
+                                        "t": "li",
+                                        "text": [
+                                            "Warm, rustic interiors with dark wood, soft lighting, and a touch of vintage charm"
+                                        ]
+                                    },
+                                    {
+                                        "t": "li",
+                                        "text": [
+                                            "Seasonal menus that evolve with the harvest"
+                                        ]
+                                    },
+                                    {
+                                        "t": "li",
+                                        "text": [
+                                            "Locally sourced wines and craft cocktails to complement every dish"
+                                        ]
+                                    },
+                                    {
+                                        "t": "li",
+                                        "text": [
+                                            "A place to linger — whether it’s a quiet dinner for two or a lively table of friends"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "t": "div",
+                "cl": [
+                    "promise"
+                ],
+                "id": "promise",
+                "ch": [
+                    {
+                        "t": "h3",
+                        "cl": [
+                            "section-title"
+                        ],
+                        "id": "promise-title",
+                        "text": "Our Promise"
+                    },
+                    {
+                        "t": "div",
+                        "cl": [
+                            "promisePara"
+                        ],
+                        "id": "promisePara",
+                        "text": [
+                            "At Ember & Vine, you’re not just a guest — you’re part of our story. We’ll keep the fire burning, the wine flowing, and the table set for whenever you’re ready to come home"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
