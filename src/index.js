@@ -1,34 +1,27 @@
 import "./styles.css";
-import aboutPage from "./about.json";
+import about from "./about.json";
+import home from "./home.json";
+import contact from "./contact.json";
 import { createElementWithClassInnerText, addMultipleChildrenToParent, selectCategory, setCurrentMenuContext, generateElementsFromJSON } from "./helpers";
 
 (function() {
-    document.querySelector('#home-btn').addEventListener('click', () => renderHomePage());
+    document.querySelector('#home-btn').addEventListener('click', () => renderPage(home));
     document.querySelector('#menu-btn').addEventListener('click', () => renderMenu());
-    document.querySelector('#about-btn').addEventListener('click', () => renderAbout());
+    document.querySelector('#about-btn').addEventListener('click', () => renderPage(about));
+    document.querySelector('#contact-btn').addEventListener('click', () => renderPage(contact));
 })()
 
-const renderHomePage = (function() {
+const renderPage = (function(page) {
     const content = document.querySelector('#content');
-    const container  = createElementWithClassInnerText({cList:'container'});
-    const welcome = createElementWithClassInnerText({cList:'welcome', text:'WELCOME TO'});
-    const restaurantName = createElementWithClassInnerText({cList:'restaurant-name'});
-    const ember = createElementWithClassInnerText({text:'Ember'});
-    const and = createElementWithClassInnerText({cList:'no-italic', text:'&'});
-    const vine = createElementWithClassInnerText({text:'Vine'});
-    const slogan = createElementWithClassInnerText({cList:'slogan', text:'Enjoy delicious food and a cozy atmosphere'});
-    const viewMenu = createElementWithClassInnerText({el:'button', text: 'VIEW MENU'});
-    viewMenu.addEventListener('click', () => renderMenu());
-    
-    addMultipleChildrenToParent({parent: restaurantName, children: [ember, and, vine]});
-    addMultipleChildrenToParent({parent: container, children: [welcome, restaurantName, slogan, viewMenu]});
-
+    const pageEl = generateElementsFromJSON(page);
     content.replaceChildren();
-    content.appendChild(container);
+    pageEl.map((el) => {
+        content.appendChild(el);
+    });
     setCurrentMenuContext("");
 });
 
-const renderMenu = (function() {
+export const renderMenu = (function() {
     const content = document.querySelector('#content');
     const container  = createElementWithClassInnerText({cList:'menu-container'});
     const title = createElementWithClassInnerText({cList: 'title', text: 'MENU'});
@@ -62,16 +55,10 @@ const renderMenu = (function() {
     content.appendChild(container);
 })
 
-const renderAbout = (function() {
-    const content = document.querySelector('#content');
-    const pageEl = generateElementsFromJSON(aboutPage);
-    content.replaceChildren();
-    pageEl.map((el) => {
-        content.appendChild(el);
-    });
-    setCurrentMenuContext("");
-})
+export const fMap = {
+    "renderMenu": renderMenu,
+    "selectCategory": selectCategory
+}
 
-renderHomePage();
+renderPage(home);
 // renderMenu();
-// renderAbout();

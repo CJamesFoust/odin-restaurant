@@ -1,5 +1,6 @@
 import data from "./menu.json";
 import { imageMap } from "./images";
+import { fMap } from "./index.js";
 var currentMenu = "";
 
 export const setCurrentMenuContext = function (str) {
@@ -117,36 +118,56 @@ export const selectCategory = (category, foodGrid) => {
 };
 
 export const generateElementsFromJSON = (data) => {
+  return data.map((obj) => {
+    let t = obj.t ? obj.t : "div";
+    let cl = obj.cl ? obj.cl : null;
+    let id = obj.id ? obj.id : null;
+    let text = obj.text ? obj.text : null;
+    let ev = obj.ev ? obj.ev : null;
+    let ch = obj.ch ? obj.ch : null;
+    let ph = obj.ph ? obj.ph : null;
+    let name = obj.name ? obj.name : null;
+    let rows = obj.rows ? obj.rows : null;
+    let gch;
 
-    return data.map((obj) => {
-        let t = obj.t ? obj.t : 'div';
-        let cl = obj.cl ? obj.cl : null;
-        let id = obj.id ? obj.id : null;
-        let text = obj.text ? obj.text : null;
-        let ch = obj.ch ? obj.ch : null;
-        let gch
+    let el = document.createElement(t);
 
-        let el = document.createElement(t);
+    if (cl !== null) {
+      cl.map((c) => el.classList.add(c));
+    };
 
-        if (cl !== null) {
-            cl.map((c) => el.classList.add(c));
-        };
+    if (id !== null) {
+      el.id = id;
+    };
 
-        if (id !== null) {
-            el.id = id;
-        };
+    if (text !== null) {
+      el.textContent = text;
+    };
 
-        if (text !== null) {
-            el.textContent = text;
-        };
+    if (ev !== null) {
+        let p = ev.p ? ev.p : [null];
+        el.addEventListener(ev.evType, () => fMap[ev.f](...p));
+    };
 
-        if (ch !== null) {
-            gch = generateElementsFromJSON(ch);
-            gch.map((c) => {
-                el.appendChild(c);
-            })
-        }
+    if (ch !== null) {
+      gch = generateElementsFromJSON(ch);
+      gch.map((c) => {
+        el.appendChild(c);
+      });
+    };
 
-        return el;
-    })
-}
+    if (ph !== null) {
+        el.placeholder = ph;
+    };
+
+    if (name !== null) {
+        el.name = name;
+    };
+
+    if (rows !== null) {
+        el.rows = rows;
+    }
+
+    return el;
+  });
+};

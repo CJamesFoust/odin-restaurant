@@ -1,0 +1,275 @@
+[
+    {
+        "t": "div",
+        "cl": [
+            "container"
+        ],
+        "ch": [
+            {
+                "t": "h1",
+                "cl": [
+                    "contact-title"
+                ],
+                "id": "contact-title",
+                "text": [
+                    "We'd love to hear from you"
+                ]
+            },
+            {
+                "t": "h3",
+                "cl": [
+                    "contact-subtitle"
+                ],
+                "id": "contact-subtitle",
+                "text": [
+                    "Whether you’re booking a table, planning an event, or just saying hello — our door is always open."
+                ]
+            },
+            {
+                "t": "div",
+                "cl": [
+                    "main"
+                ],
+                "id": "main",
+                "ch": [
+                    {
+                        "t": "div",
+                        "cl": [
+                            "left"
+                        ],
+                        "id": "left",
+                        "ch": [
+                            {
+                                "t": "div",
+                                "cl": [
+                                    "address"
+                                ],
+                                "id": "address",
+                                "ch": [
+                                    {
+                                        "t": "h3",
+                                        "cl": [
+                                            "address-title"
+                                        ],
+                                        "id": "address-title",
+                                        "text": [
+                                            "Address"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "address1"
+                                        ],
+                                        "id": "address1",
+                                        "text": [
+                                            "Ember & Vine"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "address2"
+                                        ],
+                                        "id": "address2",
+                                        "text": [
+                                            "1234 Harvest Lane"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "address3"
+                                        ],
+                                        "id": "address3",
+                                        "text": [
+                                            "Lake Magdalene, FL 33548"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "t": "div",
+                                "cl": [
+                                    "hours"
+                                ],
+                                "id": "hours",
+                                "ch": [
+                                    {
+                                        "t": "h3",
+                                        "cl": [
+                                            "hours-title"
+                                        ],
+                                        "id": "hours-title",
+                                        "text": [
+                                            "Hours"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "hours1"
+                                        ],
+                                        "id": "hours1",
+                                        "text": [
+                                            "Mon–Thu: 11:00 AM – 9:00 PM"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "hours2"
+                                        ],
+                                        "id": "hours2",
+                                        "text": [
+                                            "Fri–Sat: 11:00 AM – 11:00 PM"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "hours3"
+                                        ],
+                                        "id": "hours3",
+                                        "text": [
+                                            "Sun: 10:00 AM – 8:00 PM"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "t": "div",
+                                "cl": [
+                                    "reserve"
+                                ],
+                                "id": "reserve",
+                                "ch": [
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "reserve-text"
+                                        ],
+                                        "id": "reserve-text",
+                                        "text": [
+                                            "Reserve your table online or give us a call — we’ll have the fire warm and the wine poured."
+                                        ]
+                                    },
+                                    {
+                                        "t": "button",
+                                        "id": "reserve-btn",
+                                        "text": [
+                                            "Book a Table"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "t": "div",
+                        "cl": [
+                            "right"
+                        ],
+                        "id": "right",
+                        "ch": [
+                            {
+                                "t": "div",
+                                "cl": [
+                                    "phone"
+                                ],
+                                "id": "phone",
+                                "ch": [
+                                    {
+                                        "t": "h3",
+                                        "cl": [
+                                            "phone-title"
+                                        ],
+                                        "id": "phone-title",
+                                        "text": [
+                                            "Phone"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "phone-number"
+                                        ],
+                                        "id": "phone-number",
+                                        "text": [
+                                            "(555) 123‑4567"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "t": "div",
+                                "cl": [
+                                    "email"
+                                ],
+                                "id": "email",
+                                "ch": [
+                                    {
+                                        "t": "h3",
+                                        "cl": [
+                                            "email-title"
+                                        ],
+                                        "id": "email-title",
+                                        "text": [
+                                            "Email"
+                                        ]
+                                    },
+                                    {
+                                        "t": "div",
+                                        "cl": [
+                                            "email-address"
+                                        ],
+                                        "id": "email-address",
+                                        "text": [
+                                            "hello@emberandvine.com"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "t": "div",
+                                "cl": [
+                                    "form"
+                                ],
+                                "id": "form",
+                                "ch": [
+                                    {
+                                        "t": "input",
+                                        "type": "text",
+                                        "ph": "Name..."
+                                    },
+                                    {
+                                        "t": "input",
+                                        "type": "email",
+                                        "ph": "Email..."
+                                    },
+                                    {
+                                        "t": "input",
+                                        "type": "tel",
+                                        "ph": "Phone Number..."
+                                    },
+                                    {
+                                        "t": "textarea",
+                                        "name": "message",
+                                        "id": "message",
+                                        "ph": "Message...",
+                                        "rows": "6"
+                                    },
+                                    {
+                                        "t": "button",
+                                        "id": "message-btn",
+                                        "text": ["Send Message"]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

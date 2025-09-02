@@ -1,0 +1,59 @@
+[
+    {
+        "t": "div",
+        "cl": [
+            "container"
+        ],
+        "id": "container",
+        "ch": [
+            {
+                "t": "div",
+                "cl": [
+                    "welcome"
+                ],
+                "id": "welcome",
+                "text": [
+                    "WELCOME TO"
+                ]
+            },
+            {
+                "t": "div",
+                "cl": [
+                    "restaurant-name"
+                ],
+                "id": "restaurant-name",
+                "ch": [
+                    {
+                        "t": "div",
+                        "text": [
+                            "Ember"
+                        ]
+                    },
+                    {
+                        "t": "div",
+                        "cl": ["no-italic"],
+                        "text": ["&"]
+                    },
+                    {
+                        "t": "div",
+                        "text": ["Vine"]
+                    }
+                ]
+            },
+            {
+                "t":"div",
+                "cl": ["slogan"],
+                "id": "slogan",
+                "text": ["Enjoy delicious food and a cozy atmosphere"]
+            },
+            {
+                "t": "button",
+                "text": "VIEW MENU",
+                "ev": {
+                    "evType": "click",
+                    "f": "renderMenu"
+                }
+            }
+        ]
+    }
+]
